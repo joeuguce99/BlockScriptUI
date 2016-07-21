@@ -1,0 +1,19 @@
+tab:
+  events: Eventos
+  control: Controles
+  effects: Acciones
+  conditions: Condiciones
+  operators: Operaciones
+  expressions: Expresiones
+block:
+  effect:
+    effKill: matar a ${LivingEntity target}
+    effSpawn: aparecer ${PositiveInt amount} ${EntityType entity}
+    effDamage: lastimar a ${LivingEntity target} por ${PositiveNum amount} corazones y ${(mostrar/no mostrar) animate} animación
+    effHeal: cuarar ${LivingEntity target} por completo
+    effHealInt: cuarar ${PositiveNum amount} corazones de ${LivingEntity target}
+    effGive: dar ${*ItemStack item} a ${LivingEntity target}
+    effMakeDamage: hacer que ${LivingEntity atacker} ataque a ${LivingEntity victim}
+    effDye: teñir ${ItemStack item} de color ${*HDColor color}
+    effSend: mandar mensage ${String text} a ${Player target}
+    effBroadcast: anunciar ${String text}

@@ -1,0 +1,12 @@
+{
+  "name": "skedit",
+  "version": "1.0.0",
+  "description": "A Minecraft server behavior editor.",
+  "main": "app.js",
+  "author": "Eugenio Guzmán",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-packager": "^7.1.0",
+    "electron-prebuilt": "^1.2.5"
+  }
+}

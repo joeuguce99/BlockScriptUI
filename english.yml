@@ -1,0 +1,24 @@
+tab:
+  events: Events
+  control: Control
+  effects: Effects
+  conditions: Conditions
+  operators: Operators
+  expressions: Expressions
+block:
+  event:
+    evtDeath: "on death of ${*LivingEntity target}: ${Blocks blocks}"
+  effect:
+    effKill: kill ${LivingEntity target}
+    effSpawn: spawn ${PositiveInt amount} ${EntityType entity}
+    effDamage: damage ${LivingEntity target} by ${PositiveNum amount} hearts and ${(show/don't show) animate} animation
+    effHeal: heal ${LivingEntity target} completly
+    effHealInt: heal ${LivingEntity target} by ${PositiveNum amount} hearts
+    effGive: give ${LivingEntity target} ${*ItemStack item}
+    effMakeDamage: make ${LivingEntity atacker} damage ${LivingEntity victim}
+    effDye: dye ${ItemStack item} ${*HDColor color}
+    effSend: send message ${String text} to ${Player target}
+    effBroadcast: broadcast message ${String text}
+    effPotion: apply ${*PotionEffect effect} to ${LivingEntity target} for ${*TimeSpan time}
+    t: a
+    u: b

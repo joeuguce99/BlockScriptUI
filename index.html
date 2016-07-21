@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css" charset="utf-8">
+    <script src="skedit.js" charset="utf-8"></script>
+    <title>Skedit</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td id="palette" style="display:table-cell;">
+          <table>
+            <tr>
+              <td id="paletteTabs">
+                <table>
+                  <tr>
+                    <td id="pTabEvts" class="tab">tab.events</td>
+                    <td id="pTabCtrls" class="tab">tab.control</td>
+                    <td id="pTabEffs" class="tab">tab.effects</td>
+                  </tr>
+                  <tr>
+                    <td id="pTabConds" class="tab">tab.conditions</td>
+                    <td id="pTabOps" class="tab">tab.operators</td>
+                    <td id="pTabExprs" class="tab">tab.expressions</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td id="paletteBodyWrapper">
+                <div id="paletteBody">
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td id="togglePalette" onmousedown="togglePalette(event)" style="cursor:w-resize;">
+          ||
+        </td>
+        <td id="program">
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
